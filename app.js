@@ -96,5 +96,5 @@ app.get('/secret', isLoggedIn, (req, res) => {
 // 	console.log('Server started...');
 // });
 app.listen(process.env.PORT || 3000, process.env.IP, () => {
-	console.log('YelpCamp Server has started!');
+	console.log('Auth Server has started!');
 });
