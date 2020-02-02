@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Sherlyn;
+  src:  url(font/Sherlyn.otf);
+}
+/*=====================================*/
+body
+{
+  padding: 0%;
+  margin: 0%;
+}
+.h1
+{
+
+  font-family: Sherlyn;
+}
+.mainbox
+{
+  display: table;
+  top: 0;
+  left: 0;
+  padding: 5%;
+  position: fixed;
+  background-image: linear-gradient(to right top, #3d8eff, #7681ff, #a86eff, #d750f1, #ff00d7);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.whitebox
+{
+  background: rgba(255, 255, 255, 0.5);
+  width: 300px;
+  height: 500px;
+  margin: auto;
+  padding: 2%;
+  border-radius: 30px;
+}
+.avatar
+{
+  width: 200px;
+}
+.wave
+{
+  position: fixed;
+  height: 700px;
+  width: 20px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+li a{
+  color: #ff3da1;
+  text-decoration: none;
+  font-size: 50px;
+  transition: all ease-in-out 250ms;
+}
+li a:hover{
+  color: #000000;
+}
+/*=====================================*/
