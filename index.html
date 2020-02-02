@@ -102,6 +102,10 @@ FB.api('/me', function(response) {
       <ul>
         <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
       </ul>
+      //  The JS SDK Login Button
+
+      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+      </fb:login-button>
     </div>
     </div>
     </div>
