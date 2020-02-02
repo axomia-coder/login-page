@@ -8,6 +8,7 @@
     <!--===============================================================================================-->
     <meta name="theme-color" content="#ff488e" />
     <meta property="og:image" content="https://diku1235.github.io/thumbnail.png" />
+    <meta name="" content="48453490882-a17dvl3aj4kp1bt1fmc47pltclkjdbuf.apps.googleusercontent.com">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--===============================================================================================-->
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
     <!--===============================================================================================-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </head>
   <body>
     <!--===============================================================================================-->
@@ -95,6 +97,24 @@
       </br>
       <div id="status">
       </div>
+      </br>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+    </script>
     </div>
     </div>
     </div>
