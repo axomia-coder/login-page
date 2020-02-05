@@ -69,10 +69,11 @@
 
 
   function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      document.getElementById("status").innerHTML = '<p>Welcome '+response.name+'! <a href=login.php?name='+ response.name.replace(" ", "_") +'&email='+ response.email +'>Continue with facebook login</a></p>'
-  }
+        console.log('Welcome!  Fetching your information.... ');
+        FB.api('/me', function(response) {
+        document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+     }
 
 </script>
 
